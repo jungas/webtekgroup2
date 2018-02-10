@@ -20,6 +20,7 @@ li a{
 }
 
 body{
+	background-color: #FFDEAD;
 	margin: 0;
 }
 
@@ -38,7 +39,13 @@ h1{
 	color: #505050;
 }
 
-
-
-
-
+footer {   
+    clear: both;
+    text-align: center;
+    background-color: lightgrey;
+    overflow: hidden;
+    padding: 0 75px;
+    box-shadow: 0 -10px 10px darkgrey;
+    display: block;
+    object-position: bottom;
+}
