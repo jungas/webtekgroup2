@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
+    font-family: 'Montserrat', sans-serif;
     background-image: url(background.jpg);
 }
 /*==========Header==========*/
@@ -74,10 +76,32 @@ li.dropdown {
 .main-container{
     margin: 15px 100px;
 }
+.main-container section{
+    text-align: center;
+    margin: 0 15% 0 15%;
+}
+#go-to-top{
+    position: fixed;
+    float: right; 
+    right: 5%;
+    bottom: 10%;
+}
+.main-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
+.main-container ul li{
+    display: block;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+}
 /*==========Footer==========*/
 footer {
-    
+    margin-top: 10%;
     clear: both;
     text-align: center;
     background-color: lightgrey;
@@ -87,3 +111,4 @@ footer {
     display: block;
     object-position: bottom;
 }
+
