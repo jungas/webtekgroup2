@@ -110,36 +110,17 @@ li.dropdown {
     margin: 5px 10%;
 }
 
-.main-containe > ul {
+.main-containe > section > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.main-container > ul > li {
+.main-container > section > ul > li {
     display: block;
     text-align: center;
-    padding: 5px 16px;
     text-decoration: none;
-}
-
-.box1 {
-    background-color: #948dcd;
-    opacity: .65;
-}
-
-.box2 {
-    background-color: #80aaff;
-    opacity: .65;
-}
-
-.box1:hover {
-    background-color: #9966ff;
-}
-
-.box2:hover {
-    background-color: #645bff;
 }
 
 .main-container .left-column {
@@ -206,7 +187,91 @@ li.dropdown {
 
     box-shadow: -10px 10px 10px gray inset, 10px -10px 10px gray inset;
 }
+.box1 {
+    background-color: #d9b3ff;
+    opacity: .65;
+}
 
+.box2 {
+    background-color: aliceblue;
+    opacity: .65;
+}
+
+.box1:hover {
+    background-color: #9966ff;
+}
+
+.box2:hover {
+    background-color: #80aaff;
+}
+/*Contact Us*/
+
+iframe{
+    width: 50%;
+    height: 400px;
+    border: 0;
+    box-shadow: 5px 10px 10px gray;
+    margin: 25px 25px 25px 0;
+}
+.left{
+    padding: 0;
+    align-items: center;
+    float: left;
+}
+input[type=text], select {
+    width: 125%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=tel], select {
+    width: 125%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 125%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 80%;
+    background-color: lightblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea, select {
+    width: 125%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: skyblue;
+}
 /*==========Footer==========*/
 
 footer {
