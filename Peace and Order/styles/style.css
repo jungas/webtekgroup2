@@ -1,142 +1,225 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
-	font-family: 'Montserrat', sans-serif;
-	background-image: url(background.jpg);
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(background.jpg);
 }
-a{
+
+a {
     color: black;
 }
-a:active{
-	color: white;
+
+a:active {
+    color: white;
 }
 
 /*==========Header==========*/
 
 header {
-	background-color: lightgrey;
-	overflow: hidden;
-	padding: 0 75px;
-	box-shadow: 0 10px 10px darkgrey;
-	display: block;
+    background-color: darkgray;
+    overflow: hidden;
+    padding: 0 75px;
+    box-shadow: 0 10px 10px gray;
+    display: block;
 }
 
 header img {
-	width: 300px;
-	float: left;
-	position: relative;
+    width: 300px;
+    float: left;
+    position: relative;
 }
 
 header nav {
-	float: right;
-	padding: 10px;
+    float: right;
+    padding: 10px;
 }
 
 header nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 header nav ul li {
-	float: left;
+    float: left;
 }
 
 header nav ul li a {
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 header nav ul li .dropbtn {
-	display: inline-block;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-/*fix the colors*/
 
 header nav ul li a:hover,
 header nav ul li .dropdown:hover .dropbtn {
-	background-color: lightblue;
+    background-color: lightblue;
 }
 
 li.dropdown {
-	display: inline-block;
+    display: inline-block;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-	background-color: #f1f1f1
+    background-color: #f1f1f1
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
+    display: block;
 }
 
-.active{
-	color: white;
+.active {
+    color: white;
 }
 
 /*==========Main Content==========*/
 
 .main-container {
-	margin: 20px 100px;
+    clear: both;
+    margin: 20px 100px;
     padding: 5px;
 }
-.main-container section{
-	text-align: center;
-	margin: 5px 10%;
-}
-#go-to-top{
-    float: right;
-    position: fixed;
-    bottom: 10%;
-    right: 5%;
-}
-.main-containe>ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+
+.main-container section {
+    text-align: center;
+    margin: 5px 10%;
 }
 
-.main-container>ul>li{
-	display: block;
-	text-align: center;
-	padding: 5px 16px;
-	text-decoration: none;
+.main-containe > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
+.main-container > ul > li {
+    display: block;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+.box1 {
+    background-color: #948dcd;
+    opacity: .65;
+}
+
+.box2 {
+    background-color: #80aaff;
+    opacity: .65;
+}
+
+.box1:hover {
+    background-color: #9966ff;
+}
+
+.box2:hover {
+    background-color: #645bff;
+}
+
+.main-container .left-column {
+    float: left;
+    width: 43.25%;
+    height: 300px;
+    padding: 25px;
+    margin: 0 0 0 25px;
+    box-shadow: 10px 0px 10px gray inset;
+}
+
+.main-container .right-column {
+    float: left;
+    width: 43.25%;
+    height: 300px;
+    padding: 25px;
+    margin: 0 25px 0 0;
+    box-shadow: -10px 0px 10px gray inset;
+}
+
+.main-container .top-right {
+    box-shadow: -10px 10px 10px gray inset;
+    float: left;
+    width: 43.25%;
+    height: 300px;
+    padding: 25px;
+    margin: 25px 25px 0 0;
+}
+
+.main-container .top-left {
+    float: left;
+    box-shadow: 10px 10px 10px gray inset;
+    width: 43.25%;
+    height: 300px;
+    padding: 25px;
+    margin: 25px 0px 0px 25px;
+}
+
+.main-container .bottom-right {
+    box-shadow: -10px -10px 10px gray inset;
+    float: left;
+    width: 43.25%;
+    height: 300px;
+    padding: 25px;
+    margin: 0 25px 25px 0;
+}
+
+.main-container .bottom-left {
+    box-shadow: 10px -10px 10px gray inset;
+    float: left;
+    width: 43.25%;
+    height: 300px;
+    padding: 25px;
+    margin: 0 0 25px 25px;
+}
+
+.main-container .last {
+    align-self: center;
+    float: left;
+    height: 200px;
+    padding: 25px 25px 25px 25px;
+    margin: 0 25px 25px 25px;
+    width: 90.85%;
+
+    box-shadow: -10px 10px 10px gray inset, 10px -10px 10px gray inset;
+}
+
 /*==========Footer==========*/
 
 footer {
-	clear: both;
-	text-align: center;
-	background-color: lightgrey;
-	overflow: hidden;
-	padding: 0 75px;
-	box-shadow: 0 -10px 10px darkgrey;
+    clear: both;
+    text-align: center;
+    background-color: darkgray;
+    overflow: hidden;
+    padding: 0 75px;
+    box-shadow: 0 -10px 10px gray;
     padding-top: 5px;
     margin-top: 15px;
 }
-footer a:visited{
-	color: black;
+
+footer a:visited {
+    color: black;
 }
