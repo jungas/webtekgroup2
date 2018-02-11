@@ -18,7 +18,7 @@ header {
     background-color: gray;
     overflow: hidden;
     padding: 0 75px;
-    box-shadow: 0 10px 10px darkgray;
+    box-shadow: 0px 10px 10px darkgray;
     display: block;
 }
 
@@ -73,7 +73,6 @@ li.dropdown {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -129,7 +128,7 @@ li.dropdown {
     height: 300px;
     padding: 25px;
     margin: 0 0 0 25px;
-    box-shadow: 10px 0px 10px darkgray inset;
+    box-shadow: inset 10px 0px 10px darkgray;
 }
 
 .main-container .right-column {
@@ -138,11 +137,11 @@ li.dropdown {
     height: 300px;
     padding: 25px;
     margin: 0 25px 0 0;
-    box-shadow: -10px 0px 10px darkgray inset;
+    box-shadow: inset -10px 0px 10px darkgray;
 }
 
 .main-container .top-right {
-    box-shadow: -10px 10px 10px darkgray inset;
+    box-shadow: inset -10px 10px 10px darkgray;
     float: left;
     width: 43.25%;
     height: 300px;
@@ -152,7 +151,7 @@ li.dropdown {
 
 .main-container .top-left {
     float: left;
-    box-shadow: 10px 10px 10px darkgray inset;
+    box-shadow: inset 10px 10px 10px darkgray;
     width: 43.25%;
     height: 300px;
     padding: 25px;
@@ -160,7 +159,7 @@ li.dropdown {
 }
 
 .main-container .bottom-right {
-    box-shadow: -10px -10px 10px darkgray inset;
+    box-shadow:inset -10px -10px 10px darkgray;
     float: left;
     width: 43.25%;
     height: 300px;
@@ -169,7 +168,7 @@ li.dropdown {
 }
 
 .main-container .bottom-left {
-    box-shadow: 10px -10px 10px darkgray inset;
+    box-shadow: inset 10px -10px 10px darkgray;
     float: left;
     width: 43.25%;
     height: 300px;
@@ -178,14 +177,12 @@ li.dropdown {
 }
 
 .main-container .last {
-    align-self: center;
     float: left;
     height: 200px;
     padding: 25px 25px 25px 25px;
     margin: 0 25px 25px 25px;
     width: 90.85%;
-
-    box-shadow: -10px 10px 10px darkgray inset, 10px -10px 10px darkgray inset;
+    box-shadow: inset -10px 10px 10px darkgray,inset 10px -10px 10px darkgray;
 }
 
 .box1 {
@@ -220,67 +217,55 @@ iframe {
     padding: 0;
     float: left;
 }
+
 input,
 select {
     font-family: 'Montserrat', sans-serif;
 }
 
-input[type=text],
-select {
-    width: 125%;
-    padding: 10px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type="text"], select {
+width : 125%;
+padding : 10px 20px;
+margin : 8px 0;
+display : inline-block;
+border : 1px solid #ccc;
+box-sizing : border-box;
 }
-
-input[type=tel],
-select {
-    width: 125%;
-    padding: 10px 20px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type="tel"], select {
+width : 125%;
+padding : 10px 20px;
+margin : 5px 0;
+display : inline-block;
+border : 1px solid #ccc;
+box-sizing : border-box;
 }
-
-input[type=email],
-select {
-    width: 125%;
-    padding: 10px 20px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type="email"], select {
+width : 125%;
+padding : 10px 20px;
+margin : 5px 0;
+display : inline-block;
+border : 1px solid #ccc;
+box-sizing : border-box;
 }
-
-input[type=submit] {
-    width: 80%;
-    background-color: lightblue;
-    color: white;
-    padding: 14px 20px;
-    margin: 5px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type="submit"] {
+width : 80%;
+background-color : lightblue;
+color : white;
+padding : 14px 20px;
+margin : 5px 0;
+border : none;
+cursor : pointer;
 }
-
-textarea,
-select {
-    font-family: 'Montserrat', sans-serif;
-    width: 125%;
-    height: 175px;
-    padding: 10px 20px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+textarea, select {
+font-family : 'Montserrat', sans-serif;
+width : 125%;
+height : 175px;
+padding : 10px 20px;
+margin : 5px 0;
+display : inline-block;
+border : 1px solid #ccc;
+box-sizing : border-box;
+font-family : 'Montserrat', sans-serif;
 }
 
 input[type=submit]:hover {
@@ -294,8 +279,8 @@ footer {
     text-align: center;
     background-color: gray;
     overflow: hidden;
-    padding: 0 75px;
-    box-shadow: 0 -10px 10px darkgray;
+    padding: 0px 75px;
+    box-shadow: 0px -10px 10px darkgray;
     padding-top: 5px;
     margin-top: 15px;
 }
