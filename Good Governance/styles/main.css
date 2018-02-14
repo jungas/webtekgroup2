@@ -1,18 +1,32 @@
 body{
-    margin:0;
-    padding:0;
+   
+	background-image: url("../styles/speaker (2).jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	padding: 20px;
+  
+  
+
+
 }
 html{
     background-color: #eee;
 }
 
 #container {
-   min-height:100%;
-   position:relative;
+	min-height:100%;
+	position:relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 50px;
+	background-color: #e6e6e6;
 }
 #header {
-    padding:10px;
+    border-color: #B0C4DE;
+    padding-bottom: 10px;
     height: 8em;
+    background-color: #D3D3D3;
 }
 
 #logo { 
@@ -21,10 +35,14 @@ html{
     padding-top: 20px;
 }
 #content-text {
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 5em;
+    margin-right: 5em;
+     margin-top: 100px;
+    background-color: #DCDCDC;
     position: relative;
     text-align: center;
+    padding: 30px;
+    
 }
 #content-text h1 { 
     color: #60A1BF; 
@@ -43,6 +61,7 @@ html{
     line-height: 32px; 
     margin: 0 0 18px; 
     text-shadow: 1px 0 0 #fff; 
+    text-align: center; 
 }
 #content-text h3 {
     color: #60A1BF; 
@@ -80,23 +99,28 @@ html{
     margin: 10px;
 }
 #content-image img{
-    border-style: solid;
-    border-color: #7FB952;
+    display: block;
     width: 300px;
     height: 300px;
-    position: relative;
-    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: #7FB952;
+    border-radius: 50%;
 }
 #content-image-large{
     margin: 10px;
 }
 #content-image-large img{
+    display: block;
+    width: 800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
     border-style: solid;
     border-color: #7FB952;
-    width: 600px;
-    height: 300px;
-    position: relative;
-    border-radius: 3px;
+    margin-bottom: 50px;
+	
 }
 .img suggestion{
     border-style: solid;
@@ -273,7 +297,6 @@ background-color: #60A1BF;
 }
 
 /* Footer left */
-
 .footer .footer-left{
 	width: 40%;
 }
