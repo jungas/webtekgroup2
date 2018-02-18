@@ -2,7 +2,6 @@
 body {
     font-family: 'Arvo', serif;
     font-size: 18px;
-    background-color: white;
 }
 
 a {
@@ -136,15 +135,12 @@ li.dropdown {
     margin: 3% 0 0 3%;
     box-shadow: 10px 0px 10px gray inset;
     border-radius: 800px;
-    animation-name: stretch;
-    animation-duration: 1.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
-    animation-fill-mode: none;
-    animation-play-state: running;
 
+
+}
+
+.main-container .left-column:hover{
+    animation: bounce 1s;
 }
 
 .main-container .right-column {
@@ -155,16 +151,13 @@ li.dropdown {
     margin: 3% 0 3% 3%;
     box-shadow: -10px 0px 10px gray inset;
     border-radius: 800px;
-    animation-name: stretch;
-  animation-duration: 1.5s; 
-  animation-timing-function: ease-out; 
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 3;
-  animation-fill-mode: none;
-  animation-play-state: running;
+
 
 }
+.main-container .right-column:hover{
+    animation: bounce 1s;
+}
+
 
 .main-container .top-right {
     box-shadow: -10px 10px 10px gray inset;
@@ -174,15 +167,11 @@ li.dropdown {
     padding: 25px;
     border-radius: 800px;
     margin: 3% 2% 2% 8%;
-    animation-name: stretch;
-    animation-duration: 1.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
-    animation-fill-mode: none;
-    animation-play-state: running;
 
+}
+
+.main-container .top-right:hover{
+    animation: bounce 1s;
 }
 
 .main-container .top-left {
@@ -193,31 +182,16 @@ li.dropdown {
     padding: 25px;
     margin: 3% 10% 2% 13%;
     border-radius: 800px;
-    animation-name: stretch;
-    animation-duration: 1.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
-    animation-fill-mode: none;
-    animation-play-state: running;
+
+
 
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(.3);
-    background-color: #008689;
-    border-radius: 100%;
-  }
-  50% {
-    background-color: #20c5b0;
-  }
-  80% {
-    transform: scale(1.5);
-    background-color: #00ecff;
-  }
+.main-container .top-left:hover{
+    animation: bounce 1s;
 }
+
+
 
 .main-container .bottom-right {
     box-shadow: 10px 10px 10px gray ;
@@ -225,20 +199,12 @@ li.dropdown {
     width: 400px; 
     height: 400px; 
     margin: 3% 0 2% 2%;
-    -webkit-transform: skew(-19deg); 
-    -moz-transform: skew(-19deg); 
-    -o-transform: skew(-19deg);
-    padding: 25px;
-    font-size: 16px;
-    animation-name: stretch;
-    animation-duration: 1.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
-    animation-fill-mode: none;
-    animation-play-state: running;
+        
 
+}
+
+.main-container .bottom-right:hover{
+    animation: bounce 1s;
 }
 
 
@@ -253,18 +219,11 @@ li.dropdown {
     margin: 3% 11% 3% 16%;
     width: 400px; 
     height: 400px; 
-    -webkit-transform: skew(19deg); 
-    -moz-transform: skew(19deg); 
-    -o-transform: skew(19deg); 
-    animation-name: stretch;
-    animation-duration: 1.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
-    animation-fill-mode: none;
-    animation-play-state: running;
+    
+}
 
+.main-container .bottom-left:hover{
+    animation: bounce 1s;
 }
 
 .main-container .last {
@@ -278,18 +237,12 @@ li.dropdown {
     text-align: center; 
     text-indent: .1em;
     box-shadow: -10px 10px 10px gray , -10px -10px 10px gray ;
-    animation-name: stretch;
-    animation-duration: 1.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
-    animation-fill-mode: none;
-    animation-play-state: running;
 
+    
 }
-
-
+.main-container .last:hover{
+    animation: bounce 1s;
+}
 
 .main-container p{
     padding-top: 10px;
@@ -315,14 +268,23 @@ p, h2{
 
 .box2:hover {
     background-color: #0be390;
-    animation-name: stretch;
-    animation-duration: 1.5s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: 3;
-    animation-fill-mode: none;
-    animation-play-state: running;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
 }
 /*Contact Us*/
 
